@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- diccionario español -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=decive-width, initial-scale=1.0">
+<!-- fondo de pantalla -->
+ <body background="i3.jpg"></body>
+<!-- contenedor css para el titulo -->
+    <p><center><h2 id="titulo">Calculadora de costos</h2></center></p>
+<!-- enlace con el css -->
+<link rel="stylesheet" href="fondo.css">
+<!-- Botón de regreso -->
+        <div class="vertical-menu">
+  <a href="menu.html" class="active">Inicio</a>
+</div>
+<!-- contemedor css para el cuerpo de la pagina -->
+<div id="cuerpocal">    
+<br>
+    <h3><p>Costo primo</p></h3>
+    
+<form method="post" oninput="total.value=parseInt(num1.value)+parseInt(num2.value)">
+    <input type="number" id="num1" placeholder="Materia prima directa"> + 
+    <input type="number" id="num2" placeholder="Mano de obra directa"> = 
+    <output name="total" for="num1 num2"></output>
+</form>
+    
+    <h3><p>Costo de produccion</p></h3>
+    
+<form method="post" oninput="total.value=parseInt(num1.value)+parseInt(num2.value)+parseInt(num3.value)"> 
+    <input type="number" id="num1" placeholder="Costo primo"> + 
+    <input type="number" id="num2" placeholder="Gastos generales de fabricacion directos"> + 
+    <input type="number" id="num3" placeholder="Gastos indirectos"> = 
+    <output name="total" for="num1 num2 num3"></output>
+</form>
+    
+    <h3><p>Costos indirectos</p></h3>
+
+<form method="post" oninput="total.value=parseInt(num1.value)+parseInt(num2.value)+parseInt(num3.value)">
+    <input type="number" id="num1" placeholder="Materia prima indirecta"> + 
+    <input type="number" id="num2" placeholder="Mano de obra indirecta"> + 
+    <input type="number" id="num3" placeholder="Gastos generales de fabricacion indirectos"> = 
+    <output name="total" for="num1 num2 num3"></output>
+</form>
+    
+    <h3><p>Costo de distribución</p></h3>
+
+<form method="post" oninput="total.value=parseInt(num1.value)+parseInt(num2.value)">
+    <input type="number" id="num1" placeholder="Gastos de venta"> + 
+    <input type="number" id="num2" placeholder="Gastos de administracion"> = 
+    <output name="total" for="num1 num2"></output>
+</form>
+    
+    <h3><p>Costo total de operación</p></h3>
+
+<form method="post" oninput="total.value=parseInt(num1.value)+parseInt(num2.value)">
+    <input type="number" id="num1"  placeholder="Costo de produccion"> + 
+    <input type="number" id="num2" placeholder="Costo de distribucion"> = 
+    <output name="total" for="num1 num2"></output>
+</form>
+    
+    <h3><p>Costo unitario de producción</p></h3>
+    
+<form method="post" oninput="total.value=parseInt(num1.value)/parseInt(num2.value)">
+    <input type="number" id="num1" placeholder="Costo de produccion"> / 
+    <input type="number" id="num2" placeholder="Unidades producidas"> = 
+    <output name="total" for="num1 num2"></output>
+</form>
